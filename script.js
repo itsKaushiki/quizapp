@@ -1,4 +1,5 @@
-const container = document.querySelector('.container');
+
+  const container = document.querySelector('.container');
 const questionBox = document.querySelector('.question');
 const choicesBox = document.querySelector('.choices');
 const nextBtn = document.querySelector('.nextBtn');
@@ -10,26 +11,58 @@ const timer = document.querySelector('.timer');
 
 const quiz = [
     {
-        question: "Q. Which of the following is not a CSS box model property?",
-        choices: ["margin", "padding", "border-radius", "border-collapse"],
-        answer: "border-collapse"
+        question: "Q. What does 'DFS' stand for in the context of graph traversal?",
+        choices: ["Depth-First Search", "Directed File System", "Data Flow System", "Dynamic File Structure"],
+        answer: "Depth-First Search"
     },
     {
-        question: "Q. Which of the following is not a valid way to declare a function in JavaScript?",
-        choices: ["function myFunction() {}", " let myFunction = function() {};", "myFunction: function() {}", "const myFunction = () => {};"],
-        answer: "myFunction: function() {}"
+        question: "Q. Which data structure follows the Last In, First Out (LIFO) principle?",
+        choices: ["Queue", "Stack", "Linked List", "Heap"],
+        answer: "Stack"
     },
     {
-        question: "Q. Which of the following is not a JavaScript data type?",
-        choices: ["string", "boolean", "object", "float"],
-        answer: "float"
+        question: "Q. What is the time complexity of quicksort algorithm in the average case?",
+        choices: ["O(n log n)", "O(n^2)", "O(log n)", "O(n)"],
+        answer: "O(n log n)"
     },
     {
-        question: "Q. What is the purpose of the this keyword in JavaScript?",
-        choices: ["It refers to the current function.", "It refers to the current object.", "It refers to the parent object.", " It is used for comments."],
-        answer: "It refers to the current object."
+        question: "Q. In the context of trees, what is the 'height' of a tree?",
+        choices: ["The number of nodes", "The length of the longest path from the root to a leaf", "The number of edges", "The depth of the root node"],
+        answer: "The length of the longest path from the root to a leaf"
+    },
+    {
+        question: "Q. What is the purpose of Dijkstra's algorithm?",
+        choices: ["Sorting elements", "Finding the shortest path in a graph", "Searching in a linked list", "Hashing elements"],
+        answer: "Finding the shortest path in a graph"
+    },
+    {
+        question: "Q. Which searching algorithm works on the principle of divide and conquer?",
+        choices: ["Linear Search", "Binary Search", "Jump Search", "Interpolation Search"],
+        answer: "Binary Search"
+    },
+    {
+        question: "Q. What is the main advantage of using a hash table?",
+        choices: ["Constant time complexity for all operations", "Efficient sorting", "Automatic memory management", "Dynamic resizing"],
+        answer: "Constant time complexity for all operations"
+    },
+    {
+        question: "Q. What is the purpose of an AVL tree in computer science?",
+        choices: ["File compression", "Binary search", "Sorting", "Self-balancing binary search tree"],
+        answer: "Self-balancing binary search tree"
+    },
+    {
+        question: "Q. What is the Big-O notation for the worst-case time complexity of bubble sort?",
+        choices: ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+        answer: "O(n^2)"
+    },
+    {
+        question: "Q. In the context of hash functions, what is a collision?",
+        choices: ["When two different keys hash to the same index", "When a key is not found in the hash table", "When the hash function is not injective", "When the hash table is full"],
+        answer: "When two different keys hash to the same index"
     }
 ];
+
+
 
 
 let currentQuestionIndex = 0;
